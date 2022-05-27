@@ -79,3 +79,20 @@ order by nascimento;
 /*Ordenar por setor e salario */
 select * from funcionarios
 order by setor, salario;
+
+/* Funções agregadas
+count - min - max - avg - sum */
+
+/* mostrar nome menor e maior salario */
+select nome, min(salario) from funcionarios;
+select nome, max(salario) from funcionarios;
+
+/* mostrar soma de todos os salarios */
+select sum(salario) from funcionarios;
+
+/* soma total do salario do setor financeiro */
+select sum(salario) from funcionarios
+where setor = 'Financeiro';
+
+/* média salarial dos funcionários */
+select avg(salario) from funcionarios;

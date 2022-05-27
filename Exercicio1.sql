@@ -104,3 +104,10 @@ group by setor;
 /* Mostrar média dos salarios de cada setor */
 select setor, avg(salario) from funcionarios
 group by setor;
+
+/* Mostrar soma dos salarios de cada setor que são maior que R$1700,00 */
+select setor, sum(salario) from funcionarios
+group by setor having sum(salario) > 1700;
+
+/* mostrar total de registros */
+select count(*) from funcionarios;

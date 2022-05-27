@@ -94,5 +94,13 @@ select sum(salario) from funcionarios;
 select sum(salario) from funcionarios
 where setor = 'Financeiro';
 
-/* média salarial dos funcionários */
+/* média aritmética salarial dos funcionários */
 select avg(salario) from funcionarios;
+
+/* Mostrar soma dos salarios de cada setor */
+select setor, sum(salario) from funcionarios
+group by setor;
+
+/* Mostrar média dos salarios de cada setor */
+select setor, avg(salario) from funcionarios
+group by setor;

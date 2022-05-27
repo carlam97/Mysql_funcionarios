@@ -67,3 +67,15 @@ where nome = 'Maria' and setor = 'Financeiro';
    % = qualquer coisa */
 select * from funcionarios
 where nome like '%a';
+
+/* Ordenar por nome */
+select * from funcionarios
+order by nome;
+
+/*Ordenar por data de nascimento */
+select * from funcionarios
+order by nascimento;
+
+/*Ordenar por setor e salario */
+select * from funcionarios
+order by setor, salario;
